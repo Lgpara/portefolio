@@ -14,5 +14,38 @@
             width: 100%;
             object-fit: cover;
         }
+        .content {
+            height: 100%;
+            width: 100%;
+            margin-top: -100%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .stacks {
+                height: 20px;
+                width: 100%;
+            }
+            .textContent {
+                background-color: rgba($color: #fafdff, $alpha: 0.5);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .blocLeft {
+                    padding: 10px;
+                }
+                .fa-github {
+                    color: var(--dmtext);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    padding: 0 20px;
+                    background-color: var(--dmbackground);
+                    font-size: 40px;
+                }
+            }
+        }
     }
 }

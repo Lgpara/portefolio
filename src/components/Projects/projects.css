@@ -17,4 +17,37 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.projectsContainer .projectCard .content {
+  height: 100%;
+  width: 100%;
+  margin-top: -100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.projectsContainer .projectCard .content .stacks {
+  height: 20px;
+  width: 100%;
+}
+.projectsContainer .projectCard .content .textContent {
+  background-color: rgba(250, 253, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectsContainer .projectCard .content .textContent .blocLeft {
+  padding: 10px;
+}
+.projectsContainer .projectCard .content .textContent .fa-github {
+  color: var(--dmtext);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  background-color: var(--dmbackground);
+  font-size: 40px;
 }/*# sourceMappingURL=projects.css.map */
