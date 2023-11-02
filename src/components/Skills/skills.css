@@ -1,7 +1,6 @@
 .skillsContainer {
   height: 250px;
   display: flex;
-  opacity: 0.9;
 }
 .skillsContainer .stacks {
   min-width: 600px;
@@ -33,8 +32,9 @@
   opacity: 0.9;
 }
 .skillsContainer .competences {
-  margin-top: 10px;
-  padding: 10px 20px;
+  background-color: rgba(250, 253, 255, 0.9);
+  height: 100%;
+  padding: 20px 20px;
 }
 .skillsContainer .competences .skillsBloc {
   padding: 20px;

@@ -2,7 +2,6 @@
 .skillsContainer {
     height: 250px;
     display: flex;
-    opacity: 0.9;
     .stacks {
         min-width: 600px;
         color: var(--dmtext);
@@ -32,8 +31,10 @@
         }
     }
     .competences {
-        margin-top: 10px;
-        padding: 10px 20px;
+        background-color: rgba($color: #fafdff, $alpha: 0.9);
+
+        height: 100%;
+        padding: 20px 20px;
         .skillsBloc {
             padding: 20px;
             display: flex;

@@ -1,1 +1,72 @@
-/*# sourceMappingURL=contact.css.map */
+.contactContainer {
+  height: calc(100vh - 133px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainer .message {
+  width: 300px;
+  background-color: var(--dmbackground);
+  height: 100%;
+  padding: 80px 20px 0 20px;
+  color: var(--dmtext);
+}
+.contactContainer .formContainer {
+  flex-grow: 1;
+  padding: 20px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainer .formContainer form {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+}
+.contactContainer .formContainer form input, .contactContainer .formContainer form textarea {
+  background-color: var(--background);
+  border: none;
+  opacity: 0.7;
+  padding: 5px;
+  font-size: 20px;
+  transition: all 0.5s;
+  font-weight: 500;
+}
+.contactContainer .formContainer form input:focus, .contactContainer .formContainer form textarea:focus {
+  opacity: 1;
+  box-shadow: 0px 0px 3px #192531;
+  outline: none;
+}
+.contactContainer .formContainer form label {
+  font-size: 20px;
+  background-color: var(--dmbackground);
+  color: var(--dmtext);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 10px;
+  margin-bottom: 2px;
+}
+.contactContainer .formContainer form input {
+  margin-bottom: 10px;
+}
+.contactContainer .formContainer form button {
+  margin: 10px auto 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  color: var(--dmtext);
+  border: none;
+  font-size: 30px;
+  background-color: var(--dmbackground);
+  transition: all 0.15s;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+.contactContainer .formContainer form button:hover {
+  transform: scale(1.1);
+}
+.contactContainer .socialContainer {
+  width: 300px;
+  height: 100%;
+  background-color: var(--dmbackground);
+}/*# sourceMappingURL=contact.css.map */

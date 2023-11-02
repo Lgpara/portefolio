@@ -1,6 +1,6 @@
 import "./projects.css"
 import ph1 from "../../appdata/images/projettestphoto.jpg"
-import ph2 from "../../appdata/images/phototest2.jpg"
+import ph2 from "../../appdata/images/phototest2.png"
 import ph3 from "../../appdata/images/phototest3.jpg"
 
 
