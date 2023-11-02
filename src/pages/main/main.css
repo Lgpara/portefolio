@@ -1,0 +1,17 @@
+.titleContainer {
+    background-color: black;
+    color: var(--text);
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+}
+.sectionTitle {
+    background-color: var(--background);
+    color: var(--text);
+    width: fit-content;
+    padding: 0 60px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+}
+.projectsSection {
+    background-color: rgba(0, 3, 5, 0.9);
+}

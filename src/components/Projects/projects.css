@@ -1,0 +1,20 @@
+.projectsContainer {
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+}
+.projectsContainer .projectCard {
+  width: 33.3%;
+  height: 100%;
+  background-color: red;
+}
+.projectsContainer .projectCard img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=projects.css.map */

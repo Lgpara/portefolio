@@ -1,0 +1,8 @@
+footer {
+  text-align: center;
+  background: var(--dmbackground);
+}
+footer p {
+  padding: 10px;
+  color: var(--dmtext);
+}/*# sourceMappingURL=footer.css.map */

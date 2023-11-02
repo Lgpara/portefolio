@@ -1,0 +1,18 @@
+.projectsContainer {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    .projectCard {
+        width: 33.3%;
+        height: 100%;
+        background-color: red;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

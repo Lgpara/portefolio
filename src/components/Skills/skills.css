@@ -1,0 +1,49 @@
+.skillsContainer {
+  height: 250px;
+  display: flex;
+  opacity: 0.9;
+}
+.skillsContainer .stacks {
+  min-width: 600px;
+  color: var(--dmtext);
+  background-color: var(--dmbackground);
+}
+.skillsContainer .stacks h2 {
+  margin-top: 10px;
+  padding: 10px;
+  color: var(--text);
+  border-bottom: solid 1px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--background);
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.skillsContainer .stacks .stacksIcons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.skillsContainer .stacks .stacksIcons img {
+  height: 40px;
+  width: auto;
+  filter: invert(1);
+  font-size: 40px;
+  opacity: 0.9;
+}
+.skillsContainer .competences {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.skillsContainer .competences .skillsBloc {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.skillsContainer .competences .skillsBloc div {
+  width: 30%;
+}
+.skillsContainer .competences .skillsBloc div h3 {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=skills.css.map */
