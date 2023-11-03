@@ -25,6 +25,24 @@
     /* Revenir à la première couleur pastel */
   }
 }
+@keyframes showRightModule {
+  0% {
+    opacity: 0;
+    transform: translateX(600px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .homeContainer {
   display: flex;
   height: 1000px;
@@ -43,15 +61,13 @@
   filter: blur(2px);
   z-index: -1;
 }
-.homeContainer .bgContainer img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .homeContainer .hello {
+  opacity: 0;
   margin-left: 150px;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 150px;
+  animation: showText 1s ease-in-out 0.4s forwards;
 }
 .homeContainer .hello * {
   background-color: var(--dmbackground);
@@ -68,6 +84,8 @@
   width: 600px;
   height: 100%;
   overflow: hidden;
+  transform: translateX(600px);
+  animation: showRightModule 0.4s ease-in-out forwards 0.3s;
 }
 .homeContainer .rightModule .topElement {
   border-bottom: solid 1px rgba(75, 107, 129, 0.5);

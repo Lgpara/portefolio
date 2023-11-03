@@ -1,16 +1,19 @@
 .contactContainer {
-    height: calc(100vh - 133px);
+    height: calc(100vh - 103px);
     min-height: 800px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     .message {
-        width: 300px;
-        background-color: var(--dmbackground);
+        width: 350px;
         height: 100%;
-        padding: 80px 20px 0 20px;
+        padding: 80px 20px 0 40px;
         color: var(--dmtext);
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
     }
     .formContainer {
         flex-grow: 1;
@@ -66,8 +69,48 @@
         }
     }
     .socialContainer {
-        width: 300px;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
         height: 100%;
-        background-color: var(--dmbackground);
+        border-left: solid 1px rgba(75, 107, 129, 0.5);
+        box-shadow: -1px 0 3px rgba(0, 3, 5, 0.5);
+        .socialIconLink {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: var(--background);
+            }
+            &:hover .socialIcons {
+                color: var(--text);
+                transform: scale(1.2);
+            }
+            .socialIcons {
+                transition: all 0.2s ease-in-out;
+                color: var(--dmtext);
+                font-size: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .mail {
+                display: flex;
+                &:hover .fa-copy {
+                    opacity: 1;
+                }
+                &:hover .enveloppe {
+                    opacity: 0;
+                }
+            }
+            .fa-copy {
+                margin-left: -100%;
+                opacity: 0;
+            }
+        }
     }
 }

@@ -1,8 +1,13 @@
 footer {
-  text-align: center;
-  background: var(--dmbackground);
+  background: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  height: 40px;
+  margin-top: -38px;
 }
 footer p {
-  padding: 10px;
+  background: var(--dmbackground);
+  padding: 10px 50px;
   color: var(--dmtext);
 }/*# sourceMappingURL=footer.css.map */

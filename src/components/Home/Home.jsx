@@ -1,8 +1,8 @@
 import "./home.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Application } from "@splinetool/runtime";
 import pp from "../../appdata/images/testphoto.png";
-import projectsData from "../../appdata/data/projects.json"
+import projectsData from "../../appdata/data/projects.json";
 
 function SplineComponent() {
   useEffect(() => {
@@ -15,10 +15,10 @@ function SplineComponent() {
     };
 
     loadSplineScene();
-  }, []);
-
+  }, []); 
   return <canvas id="canvas3d" style={{ display: "none" }}></canvas>;
 }
+
 
 function Home() {
   return (
@@ -40,11 +40,7 @@ function Home() {
         <div className="topElement">
           <div className="textContainer">
             <h2>About me.</h2>
-            <p>
-              My name is Louis Gerber. I'm a 26 years old web developper
-              passionated about the tech industry. I have completed the web
-              integrator curriculum on the OpenClassrooms platform.
-            </p>
+            <p>My name is Louis Gerber. I'm a 26 years old web developper passionated about the tech industry. I have completed the web integrator curriculum on the OpenClassrooms platform.</p>
           </div>
           <div className="photoContainer">
             <img src={pp} alt="" />
