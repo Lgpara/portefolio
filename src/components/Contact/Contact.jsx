@@ -10,9 +10,7 @@ export default function Contact() {
       <div className="formContainer">
         <form
           name="contact"
-          method="POST"
-          data-netlify="true"
-          action="https://main--charming-cheesecake-66fbab.netlify.app"
+          netlify
         >
           <input type="hidden" name="to" value="louisgerber004@gmail.com" />
           <label htmlFor="name">Name / Company</label>
