@@ -1,7 +1,6 @@
 import "./home.css";
 import React, { useEffect } from "react";
 import { Application } from "@splinetool/runtime";
-import testprojet from "../../appdata/images/phototest2.png";
 import pp from "../../appdata/images/testphoto.png";
 import projectsData from "../../appdata/data/projects.json"
 

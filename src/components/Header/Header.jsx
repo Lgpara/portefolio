@@ -73,7 +73,7 @@ export default function Header() {
           <p className="mailAdress">louisgerber004@gmail.com</p>
         </div>
           <a href="https://github.com/Lgpara"><i className="headerIcons fa-brands fa-github"></i></a>
-          <a href=""><i className="headerIcons fa-brands fa-linkedin"></i></a>
+          <a><i className="headerIcons fa-brands fa-linkedin"></i></a>
       </div>
     </header>
   );
