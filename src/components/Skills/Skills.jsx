@@ -6,7 +6,7 @@ import css from "../../appdata/images/icons/css.svg";
 import sass from "../../appdata/images/icons/sass.svg";
 import js from "../../appdata/images/icons/js.svg";
 import react from "../../appdata/images/icons/react.svg";
-import vue from "../../appdata/images/icons/vue.svg";
+import next from "../../appdata/images/icons/next.svg";
 
 export default function Skills() {
   return (
@@ -19,7 +19,7 @@ export default function Skills() {
           <img src={sass} alt="Icone Sass" />
           <img src={js} alt="Icone Js" />
           <img src={react} alt="Icone React" />
-          <img src={vue} alt="Icone Vue" />
+          <img src={next} alt="Icone Next" />
         </div>
       </div>
       <div className="competences">

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Application } from "@splinetool/runtime";
 import testprojet from "../../appdata/images/phototest2.png";
 import pp from "../../appdata/images/testphoto.png";
+import projectsData from "../../appdata/data/projects.json"
 
 function SplineComponent() {
   useEffect(() => {
@@ -51,7 +52,7 @@ function Home() {
           </div>
         </div>
         <div className="bottomElement">
-          <img src={testprojet} alt="" />
+          <img src={projectsData.projects[0].images[0]} alt="" />
           <div className="textElement">
             <div className="title">
               <h2>Last Project</h2>

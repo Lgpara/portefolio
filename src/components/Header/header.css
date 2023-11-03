@@ -53,6 +53,7 @@ header .elements {
 }
 header .elements .navIcon {
   margin-right: 20px;
+  cursor: pointer;
 }
 header .elements .openAnim {
   animation: widthOpen 0.2s ease-in-out forwards;
@@ -82,12 +83,16 @@ header .socialIcons {
   align-items: center;
 }
 header .socialIcons .langSwitch {
-  color: var(--text);
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 2px 10px 2px 2px;
   border-radius: 24px;
   background-color: var(--background);
+  transition: all 0.15s;
+}
+header .socialIcons .langSwitch:hover {
+  transform: scale(1.03);
 }
 header .socialIcons .langSwitch :nth-child(1) {
   font-size: 25px;
@@ -101,19 +106,24 @@ header .socialIcons .langSwitch :nth-child(1) {
   align-items: center;
 }
 header .socialIcons .langSwitch p {
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--text);
 }
 header .socialIcons .langSwitchAnim {
   animation: langBtnAnim 0.5s ease-in-out;
 }
 header .socialIcons .mail {
   margin-left: 20px;
-  color: var(--text);
+  cursor: pointer;
   display: flex;
   align-items: center;
   padding: 2px 10px 2px 2px;
   border-radius: 24px;
   background-color: var(--background);
+  transition: all 0.15s;
+}
+header .socialIcons .mail:hover {
+  transform: scale(1.03);
 }
 header .socialIcons .mail :nth-child(1) {
   font-size: 25px;
@@ -127,7 +137,11 @@ header .socialIcons .mail :nth-child(1) {
   align-items: center;
 }
 header .socialIcons .mail p {
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--text);
+}
+header .socialIcons .greenBg {
+  background-color: #adf6b1 !important;
 }
 
 .headerIcons {
@@ -136,5 +150,5 @@ header .socialIcons .mail p {
   margin-left: 20px;
 }
 .headerIcons:hover {
-  transform: scale(1.08);
+  transform: scale(1.15);
 }/*# sourceMappingURL=header.css.map */
