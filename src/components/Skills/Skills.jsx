@@ -28,28 +28,30 @@ export default function Skills() {
           <div className="apt1">
             <h3>Applications Web</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-              ab eveniet quis veritatis reiciendis amet non qui, veniam quam
-              necessitatibus delectus itaque, perspiciatis quo quisquam
-              possimus. Laudantium alias mollitia esse.
+              Besoin d'une application web sur mesure ? Je suis là pour
+              concevoir des solutions personnalisées et performantes pour votre
+              entreprise. Faites passer votre entreprise au niveau supérieur
+              avec une application web conçue sur mesure pour répondre à vos
+              besoins uniques.
             </p>
           </div>
           <div className="apt1">
             <h3>SEO</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-              ab eveniet quis veritatis reiciendis amet non qui, veniam quam
-              necessitatibus delectus itaque, perspiciatis quo quisquam
-              possimus. Laudantium alias mollitia esse.
+              Optimisez votre visibilité en ligne. Je créerai un site web qui se
+              démarque sur les moteurs de recherche. Votre site sera conçu pour
+              attirer un trafic qualifié, renforçant ainsi votre présence en
+              ligne et stimulant votre croissance.
             </p>
           </div>
           <div className="apt1">
             <h3>Accessibilité</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-              ab eveniet quis veritatis reiciendis amet non qui, veniam quam
-              necessitatibus delectus itaque, perspiciatis quo quisquam
-              possimus. Laudantium alias mollitia esse.
+              Rendez votre site accessible à tous. Je veille à ce que votre site
+              soit convivial pour tous les utilisateurs, y compris ceux ayant
+              des besoins spéciaux. Améliorez l'expérience de vos visiteurs et
+              montrez votre engagement envers l'inclusion en optant pour un site
+              web accessible.
             </p>
           </div>
         </div>

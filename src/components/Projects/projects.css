@@ -1,3 +1,13 @@
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
 .projectsContainer {
   height: 500px;
   width: 100%;
@@ -6,11 +16,15 @@
           backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
+  border-bottom: solid 1px rgba(75, 107, 129, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
 }
 .projectsContainer .projectCard {
   width: 33.3%;
   height: 100%;
   background-color: red;
+  display: flex;
+  overflow: hidden;
 }
 .projectsContainer .projectCard img {
   height: 100%;
@@ -21,7 +35,7 @@
 .projectsContainer .projectCard .content {
   height: 100%;
   width: 100%;
-  margin-top: -100%;
+  margin-left: -100%;
   position: relative;
   z-index: 1;
   display: flex;
@@ -29,11 +43,29 @@
   flex-direction: column;
 }
 .projectsContainer .projectCard .content .stacks {
-  height: 20px;
-  width: 100%;
+  transition: all 0.2s;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectsContainer .projectCard .content .stacks .linkButton {
+  color: transparent;
+  transition: all 0.2s;
+  font-size: 30px;
+}
+.projectsContainer .projectCard .content .stacks:hover {
+  background-color: rgba(250, 253, 255, 0.2);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+.projectsContainer .projectCard .content .stacks:hover .linkButton {
+  color: var(--text);
+  font-size: 34px;
 }
 .projectsContainer .projectCard .content .textContent {
-  background-color: rgba(250, 253, 255, 0.5);
+  box-shadow: 0 -10px 40px rgba(0, 3, 5, 0.8);
+  background-color: rgba(250, 253, 255, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,8 +73,29 @@
 .projectsContainer .projectCard .content .textContent .blocLeft {
   padding: 10px;
 }
-.projectsContainer .projectCard .content .textContent .fa-github {
+.projectsContainer .projectCard .content .textContent .ghButtonContainer {
+  display: flex;
+  height: 100%;
+}
+.projectsContainer .projectCard .content .textContent .ghButtonContainer:hover .ghButtonTxt {
+  transform: translate(0px);
+  opacity: 1;
+}
+.projectsContainer .projectCard .content .textContent .ghButtonContainer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--dmtext);
+  height: 100%;
+  padding: 0 20px;
+  background-color: var(--dmbackground);
+  border-right: 1px solid;
+  transform: translateX(195px);
+  transition: all 0.25s;
+  opacity: 0;
+  font-weight: 400;
+}
+.projectsContainer .projectCard .content .textContent .ghButtonContainer .iconContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,4 +103,9 @@
   padding: 0 20px;
   background-color: var(--dmbackground);
   font-size: 40px;
+  z-index: 1;
+}
+.projectsContainer .projectCard .content .textContent .ghButtonContainer .iconContainer .fa-github {
+  color: var(--dmtext);
+  animation: scaleAnimation 1.2s infinite alternate;
 }/*# sourceMappingURL=projects.css.map */

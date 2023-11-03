@@ -1,3 +1,30 @@
+@charset "UTF-8";
+@keyframes colorAnimation {
+  0% {
+    color: #f0cb8f;
+    /* Exemple de couleur pastel */
+  }
+  20% {
+    color: #c9f0e9;
+    /* Exemple de couleur pastel */
+  }
+  40% {
+    color: #f3cfcf;
+    /* Exemple de couleur pastel */
+  }
+  60% {
+    color: #e2b8e6;
+    /* Exemple de couleur pastel */
+  }
+  80% {
+    color: #e3f8d1;
+    /* Exemple de couleur pastel */
+  }
+  100% {
+    color: #f8ead4;
+    /* Revenir à la première couleur pastel */
+  }
+}
 .homeContainer {
   display: flex;
   height: 1000px;
@@ -43,6 +70,8 @@
   overflow: hidden;
 }
 .homeContainer .rightModule .topElement {
+  border-bottom: solid 1px rgba(75, 107, 129, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
   height: calc(100% - 600px);
   background-color: rgba(0, 3, 5, 0.9);
   width: 600px;
@@ -57,6 +86,10 @@
 .homeContainer .rightModule .topElement .textContainer h2 {
   margin-bottom: 10px;
   font-size: 32px;
+  animation: colorAnimation 16s infinite;
+}
+.homeContainer .rightModule .topElement .textContainer p {
+  font-size: 20px;
 }
 .homeContainer .rightModule .topElement .textContainer * {
   color: var(--dmtext);
@@ -85,15 +118,18 @@
   width: 600px;
   height: 600px;
   overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .homeContainer .rightModule .bottomElement:hover img {
   transform: scale(1.05);
   filter: blur(1px);
 }
 .homeContainer .rightModule .bottomElement img {
+  position: relative;
   margin-bottom: -580px;
-  height: 600px;
-  width: 600px;
+  height: 520px;
+  width: 520px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.2s;

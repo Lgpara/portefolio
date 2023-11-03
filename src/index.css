@@ -11,6 +11,10 @@
     --dmaccent: #7e9eb4;
 }
 
+.titleContainer {
+    border-bottom: solid 1px rgba(75, 107, 129, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
+}
 body {
     margin: 0;
     padding: 0;

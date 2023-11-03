@@ -6,11 +6,11 @@
     justify-content: flex-end;
 }
 .sectionTitle {
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--dmbackground);
+    color: var(--dmtext);
     width: 300px;
     text-align: center;
-    border: solid 1px rgba(0, 0, 0, 0.1);
+    height: 40px;
 }
 .projectsSection {
     background-color: rgba(0, 3, 5, 0.9);
