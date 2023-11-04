@@ -1,19 +1,19 @@
 .contactContainer {
   height: calc(100vh - 103px);
   min-height: 800px;
-  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .contactContainer .message {
-  width: 350px;
+  position: absolute;
   height: 100%;
-  padding: 80px 20px 0 40px;
+  padding: 40px;
   color: var(--dmtext);
 }
+.contactContainer .message * {
+  background-color: rgba(0, 3, 5, 0.8);
+}
 .contactContainer .message h2 {
-  font-size: 30px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 .contactContainer .formContainer {
@@ -22,9 +22,9 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .contactContainer .formContainer form {
+  margin-top: 150px;
   width: 72%;
   height: 80%;
   display: flex;
@@ -72,6 +72,8 @@
   transform: scale(1.1);
 }
 .contactContainer .socialContainer {
+  position: absolute;
+  right: 0;
   display: flex;
   flex-direction: column;
   width: 150px;

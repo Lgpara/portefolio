@@ -9,30 +9,53 @@
   }
 }
 .projectsContainer {
-  height: 500px;
-  width: 100%;
   margin: auto;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   border-bottom: solid 1px rgba(75, 107, 129, 0.5);
   box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
 }
-.projectsContainer .projectCard {
-  width: 33.3%;
+.projectsContainer .bloc2 {
+  flex-direction: row !important;
+}
+.projectsContainer .projectBloc {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.projectsContainer .projectBloc .projectInfos {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
   height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.projectsContainer .projectBloc .projectInfos .projectName, .projectsContainer .projectBloc .projectInfos .mission {
+  margin-bottom: 20px;
+}
+.projectsContainer .projectBloc .projectInfos .usedStacks {
+  height: 50px;
   background-color: red;
+  width: 200px;
+}
+.projectsContainer .projectBloc .projectCard {
+  width: 50%;
+  height: 100%;
   display: flex;
   overflow: hidden;
 }
-.projectsContainer .projectCard img {
+.projectsContainer .projectBloc .projectCard img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.projectsContainer .projectCard .content {
+.projectsContainer .projectBloc .projectCard .content {
   height: 100%;
   width: 100%;
   margin-left: -100%;
@@ -42,46 +65,46 @@
   justify-content: space-between;
   flex-direction: column;
 }
-.projectsContainer .projectCard .content .stacks {
+.projectsContainer .projectBloc .projectCard .content .stacks {
   transition: all 0.2s;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.projectsContainer .projectCard .content .stacks .linkButton {
+.projectsContainer .projectBloc .projectCard .content .stacks .linkButton {
   color: transparent;
   transition: all 0.2s;
   font-size: 30px;
 }
-.projectsContainer .projectCard .content .stacks:hover {
+.projectsContainer .projectBloc .projectCard .content .stacks:hover {
   background-color: rgba(250, 253, 255, 0.2);
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
 }
-.projectsContainer .projectCard .content .stacks:hover .linkButton {
+.projectsContainer .projectBloc .projectCard .content .stacks:hover .linkButton {
   color: var(--text);
   font-size: 34px;
 }
-.projectsContainer .projectCard .content .textContent {
+.projectsContainer .projectBloc .projectCard .content .textContent {
   box-shadow: 0 -10px 40px rgba(0, 3, 5, 0.8);
   background-color: rgba(250, 253, 255, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.projectsContainer .projectCard .content .textContent .blocLeft {
+.projectsContainer .projectBloc .projectCard .content .textContent .blocLeft {
   padding: 10px;
 }
-.projectsContainer .projectCard .content .textContent .ghButtonContainer {
+.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer {
   display: flex;
   height: 100%;
 }
-.projectsContainer .projectCard .content .textContent .ghButtonContainer:hover .ghButtonTxt {
+.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer:hover .ghButtonTxt {
   transform: translate(0px);
   opacity: 1;
 }
-.projectsContainer .projectCard .content .textContent .ghButtonContainer p {
+.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +118,7 @@
   opacity: 0;
   font-weight: 400;
 }
-.projectsContainer .projectCard .content .textContent .ghButtonContainer .iconContainer {
+.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer .iconContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +128,7 @@
   font-size: 40px;
   z-index: 1;
 }
-.projectsContainer .projectCard .content .textContent .ghButtonContainer .iconContainer .fa-github {
+.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer .iconContainer .fa-github {
   color: var(--dmtext);
   animation: scaleAnimation 1.2s infinite alternate;
 }/*# sourceMappingURL=projects.css.map */

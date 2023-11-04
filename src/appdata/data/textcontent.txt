@@ -1,0 +1,26 @@
+Eng:
+
+Hello my name is Louis,
+I'm a junior Front-End
+web developper,
+this is my portefolio.
+
+About me.
+My name is Louis Gerber.
+I'm a 26 years old web developper passionated about the tech industry.
+I have completed the web integrator curriculum on the OpenClassrooms platform.
+
+Domaine de compétences
+Applications Web
+Besoin d'une application web sur mesure ?
+Je suis là pour concevoir des solutions personnalisées et performantes pour votre entreprise.
+Faites passer votre entreprise au niveau supérieur avec une application web conçue sur mesure pour répondre à vos besoins uniques.
+
+Accessibilité
+Rendez votre site accessible à tous. 
+Je veille à ce que votre site soit convivial pour tous les utilisateurs, 
+y compris ceux ayant des besoins spéciaux.
+Améliorez l'expérience de vos visiteurs et montrez votre engagement envers l'inclusion en optant pour un site web accessible.
+
+Thanks for visiting my Portefolio !
+Feel free to contact me for infos or just to say hi.

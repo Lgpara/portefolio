@@ -4,7 +4,6 @@ footer {
   width: fit-content;
   margin: auto;
   height: 40px;
-  margin-top: -38px;
 }
 footer p {
   background: var(--dmbackground);
