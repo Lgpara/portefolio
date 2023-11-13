@@ -11,8 +11,8 @@ import next from "../../appdata/images/icons/next.svg";
 export default function Skills() {
   return (
     <div className="skillsContainer">
+        <h2 className="stacksTitle">Mes Stacks</h2>
       <div className="stacks">
-        <h2>Mes Stacks</h2>
         <div className="stacksIcons">
           <img src={html} alt="Icone Html" />
           <img src={css} alt="Icone Css" />

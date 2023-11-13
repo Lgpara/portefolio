@@ -1,44 +1,51 @@
 .skillsContainer {
-  height: 290px;
+  width: 100%;
   display: flex;
-  border-bottom: solid 1px rgba(75, 107, 129, 0.5);
-  box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
+  align-items: center;
+  border-bottom: var(--border);
+  box-shadow: var(--boxshdw);
+  background-color: var(--background05);
+  border-right: var(--border);
+  position: relative;
 }
-.skillsContainer .stacks {
-  min-width: 600px;
-  color: var(--dmtext);
-  background-color: rgba(0, 3, 5, 0.9);
-  border-right: solid 1px rgba(75, 107, 129, 0.5);
-  box-shadow: 1px 0 3px rgba(0, 3, 5, 0.5);
-}
-.skillsContainer .stacks h2 {
-  margin-top: 10px;
-  padding: 10px;
+.skillsContainer .stacksTitle {
+  margin-top: 20px;
+  padding: 10px 20px;
   color: var(--text);
-  border-bottom: solid 1px;
   width: -moz-fit-content;
   width: fit-content;
   background-color: var(--background);
   margin-bottom: 40px;
   font-weight: 600;
+  position: absolute;
+  top: 0;
+}
+.skillsContainer .stacks {
+  height: 100%;
+  width: 40%;
+  min-width: 600px;
+  color: var(--text);
 }
 .skillsContainer .stacks .stacksIcons {
-  width: 80%;
+  width: 86%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 .skillsContainer .stacks .stacksIcons img {
-  height: 40px;
+  height: 4.6vw;
   width: auto;
   filter: invert(1);
-  font-size: 40px;
   opacity: 0.9;
 }
 .skillsContainer .competences {
   background-color: rgba(250, 253, 255, 0.9);
+  width: 60%;
   height: 100%;
   padding: 20px 20px;
+}
+.skillsContainer .competences * {
+  color: var(--background);
 }
 .skillsContainer .competences .skillsBloc {
   padding: 20px;

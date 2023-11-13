@@ -1,23 +1,3 @@
-@keyframes widthOpen {
-  0% {
-    opacity: 0.1;
-    width: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 410px;
-  }
-}
-@keyframes widthClose {
-  0% {
-    opacity: 1;
-    width: 410px;
-  }
-  100% {
-    opacity: 0.1;
-    width: 0;
-  }
-}
 @keyframes langBtnAnim {
   0% {
     filter: invert(0);
@@ -44,39 +24,64 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
   height: 60px;
-  margin-bottom: 60px;
-  background-color: var(--dmbackground);
+  background-color: var(--background);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: solid 1px rgba(75, 107, 129, 0.5);
-  box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
+  border-bottom: var(--border);
+  box-shadow: var(--boxshdw);
   animation: showHeader 0.4s ease-in-out forwards;
 }
 header * {
   color: var(--dmtext);
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header .openAnimSidePannel {
+    height: 100vh;
+  }
+}
 header .elements {
   display: flex;
   align-items: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header .elements {
+    transition: all 0.5s;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--background05);
+    align-items: start;
+    flex-direction: column;
+  }
+}
 header .elements .navIcon {
+  padding: 0 20px;
+  display: flex;
   margin-right: 20px;
   cursor: pointer;
 }
-header .elements .openAnim {
-  animation: widthOpen 0.2s ease-in-out forwards;
-}
-header .elements .closeAnim {
-  animation: widthClose 0.2s ease-in-out forwards;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header .elements .navIcon {
+    margin: 18px 0 36px 20px;
+  }
 }
 header .elements nav {
-  overflow: hidden;
+  padding: 0 20px;
   margin-top: -2px;
-  width: 0;
   display: flex;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header .elements nav {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header .elements nav {
+    margin-top: -2px;
+    transform: translateX(-500px);
+    transition: all 0.5s;
+  }
 }
 header .elements nav a {
   margin-left: 10px;
@@ -89,6 +94,11 @@ header .elements nav a {
 header .elements nav a:hover {
   transform: scale(1.05);
 }
+@media only screen and (min-width: 1024px) {
+  header .elements .openAnim {
+    transform: translateX(0px);
+  }
+}
 header .socialIcons {
   display: flex;
   align-items: center;
@@ -99,7 +109,7 @@ header .socialIcons .langSwitch {
   align-items: center;
   padding: 2px 10px 2px 2px;
   border-radius: 24px;
-  background-color: var(--background);
+  background-color: var(--text);
   transition: all 0.15s;
 }
 header .socialIcons .langSwitch:hover {
@@ -108,7 +118,7 @@ header .socialIcons .langSwitch:hover {
 header .socialIcons .langSwitch :nth-child(1) {
   font-size: 25px;
   margin-right: 8px;
-  background-color: var(--dmbackground);
+  background-color: var(--background);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -118,7 +128,7 @@ header .socialIcons .langSwitch :nth-child(1) {
 }
 header .socialIcons .langSwitch p {
   font-weight: 600;
-  color: var(--text);
+  color: var(--background);
 }
 header .socialIcons .langSwitchAnim {
   animation: langBtnAnim 0.5s ease-in-out;
@@ -130,7 +140,7 @@ header .socialIcons .mail {
   align-items: center;
   padding: 2px 10px 2px 2px;
   border-radius: 24px;
-  background-color: var(--background);
+  background-color: var(--text);
   transition: all 0.15s;
 }
 header .socialIcons .mail:hover {
@@ -139,7 +149,7 @@ header .socialIcons .mail:hover {
 header .socialIcons .mail :nth-child(1) {
   font-size: 25px;
   margin-right: 8px;
-  background-color: var(--dmbackground);
+  background-color: var(--background);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -149,7 +159,7 @@ header .socialIcons .mail :nth-child(1) {
 }
 header .socialIcons .mail p {
   font-weight: 600;
-  color: var(--text);
+  color: var(--background);
 }
 header .socialIcons .greenBg {
   background-color: #adf6b1 !important;

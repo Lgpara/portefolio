@@ -17,23 +17,28 @@
   box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
 }
 .projectsContainer .bloc2 {
-  flex-direction: row !important;
+  flex-direction: row-reverse !important;
 }
 .projectsContainer .projectBloc {
-  height: 500px;
+  height: 600px;
   width: 100%;
   overflow: hidden;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 .projectsContainer .projectBloc .projectInfos {
   padding: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+}
+.projectsContainer .projectBloc .projectInfos * {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--dmtext);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .projectsContainer .projectBloc .projectInfos .projectName, .projectsContainer .projectBloc .projectInfos .mission {
   margin-bottom: 20px;
@@ -44,7 +49,7 @@
   width: 200px;
 }
 .projectsContainer .projectBloc .projectCard {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   overflow: hidden;
@@ -94,7 +99,12 @@
   align-items: center;
 }
 .projectsContainer .projectBloc .projectCard .content .textContent .blocLeft {
-  padding: 10px;
+  padding: 18px 25px;
+  transition: all 0.2s;
+}
+.projectsContainer .projectBloc .projectCard .content .textContent .blocLeft:hover {
+  background-color: var(--dmbackground);
+  color: var(--dmtext);
 }
 .projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer {
   display: flex;

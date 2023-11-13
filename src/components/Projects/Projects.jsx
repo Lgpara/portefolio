@@ -15,8 +15,7 @@ export default function Projects() {
             </div>
             <div className="textContent">
               <div className="blocLeft">
-                <h2>Placeholder</h2>
-                <p className="description">Placeholder - description</p>
+                <h2>Visit website</h2>
               </div>
               <div className="ghButtonContainer">
                 <p className="ghButtonTxt">Check code on github !</p>
@@ -29,7 +28,12 @@ export default function Projects() {
         </div>
         <div className="projectInfos">
           <h2 className="projectName">Placeholder</h2>
-          <p className="mission">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nam, illum corporis iste quidem minus. Rem ducimus officiis tempore error! Velit iste officiis exercitationem magnam architecto animi quam voluptates amet!</p>
+          <p className="mission">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            nam, illum corporis iste quidem minus. Rem ducimus officiis tempore
+            error! Velit iste officiis exercitationem magnam architecto animi
+            quam voluptates amet!
+          </p>
           <div className="usedStacks"></div>
         </div>
       </div>
@@ -42,8 +46,7 @@ export default function Projects() {
             </div>
             <div className="textContent">
               <div className="blocLeft">
-                <h2>Placeholder</h2>
-                <p className="description">Placeholder - description</p>
+                <h2>Visit website</h2>
               </div>
               <div className="ghButtonContainer">
                 <p className="ghButtonTxt">Check code on github !</p>
@@ -65,8 +68,7 @@ export default function Projects() {
             </div>
             <div className="textContent">
               <div className="blocLeft">
-                <h2>Placeholder</h2>
-                <p className="description">Placeholder - description</p>
+                <h2>Visit website</h2>
               </div>
               <div className="ghButtonContainer">
                 <p className="ghButtonTxt">Check code on github !</p>

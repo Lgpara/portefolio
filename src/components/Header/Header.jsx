@@ -41,7 +41,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="elements">
+      <div className={navOpen ? "elements openAnimSidePannel": "elements" }>
         {navOpen ? (
           <i
             onClick={() => setNavOpen(false)}

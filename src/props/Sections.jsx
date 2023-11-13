@@ -1,3 +1,5 @@
+import "./sections.css"
+
 export default function Section(props){
     return(
         <section id={props.id} className={props.name}>

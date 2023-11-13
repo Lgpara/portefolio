@@ -23,9 +23,9 @@ function SplineComponent() {
 function Home() {
   return (
     <div className="homeContainer">
-      <div className="bgContainer">
+      {/* <div className="bgContainer">
         <SplineComponent />
-      </div>
+      </div> */}
       <div className="hello">
         <h1>Hello my name is Louis,</h1>
         <p>
@@ -50,7 +50,8 @@ function Home() {
           <img src={projectsData.projects[0].images[0]} alt="" />
           <div className="textElement">
             <div className="title">
-              <h2>Last Project</h2>
+              <h2>Currently working on</h2>
+              <i class="fa-solid fa-gear"></i>
             </div>
           </div>
         </div>

@@ -4,10 +4,13 @@
     font-weight: 100;
     display: flex;
     justify-content: flex-end;
+    border-bottom: var(--border);
+    border-top: var(--border);
+    box-shadow: var(--boxshdw);
 }
 .sectionTitle {
-    background-color: var(--dmbackground);
-    color: var(--dmtext);
+    background-color: var(--background);
+    color: var(--text);
     width: 300px;
     text-align: center;
     height: 40px;

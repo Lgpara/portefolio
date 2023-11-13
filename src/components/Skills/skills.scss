@@ -1,45 +1,50 @@
-
 .skillsContainer {
-    height: 290px;
+    width: 100%;
     display: flex;
-    border-bottom: solid 1px rgba($color: #4b6b81, $alpha: 0.5);
-            box-shadow: 0 1px 3px rgba($color: #000305, $alpha: 0.5);
+    align-items: center;
+    border-bottom: var(--border);
+    box-shadow: var(--boxshdw);
+    background-color: var(--background05);
+    border-right: var(--border);
+    position: relative;
+    .stacksTitle {
+        margin-top: 20px;
+        padding: 10px 20px;
+        color: var(--text);
+        width: fit-content;
+        background-color: var(--background);
+        margin-bottom: 40px;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        
+    }
     .stacks {
+        height: 100%;
+        width: 40%;
         min-width: 600px;
-        color: var(--dmtext);
-        background-color: rgba($color: #000305, $alpha: 0.9);
-        border-right: solid 1px rgba(75, 107, 129, 0.5);
-        box-shadow: 1px 0 3px rgba(0, 3, 5, 0.5);
-
-        h2 {
-            margin-top: 10px;
-            padding: 10px ;
-            color: var(--text);
-            border-bottom: solid 1px;
-            width: fit-content;
-            background-color: var(--background);
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
+        color: var(--text);
         .stacksIcons {
-            width: 80%;
+            width: 86%;
             margin: auto;
             display: flex;
             justify-content: space-between;
             img {
-                height: 40px;
+                height: 4.6vw;
                 width: auto;
                 filter: invert(1);
-                font-size: 40px;
                 opacity: 0.9;
             }
         }
     }
     .competences {
         background-color: rgba($color: #fafdff, $alpha: 0.9);
-
+        width: 60%;
         height: 100%;
         padding: 20px 20px;
+        * {
+            color: var(--background);
+        }
         .skillsBloc {
             padding: 20px;
             display: flex;
