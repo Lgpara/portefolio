@@ -27,26 +27,29 @@
   flex-direction: row;
 }
 .projectsContainer .projectBloc .projectInfos {
-  padding: 5%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   width: 40%;
   height: 100%;
+  border: solid;
+  padding: 60px;
 }
 .projectsContainer .projectBloc .projectInfos * {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: var(--dmtext);
-  width: -moz-fit-content;
-  width: fit-content;
+  color: var(--text);
 }
-.projectsContainer .projectBloc .projectInfos .projectName, .projectsContainer .projectBloc .projectInfos .mission {
-  margin-bottom: 20px;
+.projectsContainer .projectBloc .projectInfos .projectName {
+  font-size: 30px;
 }
 .projectsContainer .projectBloc .projectInfos .usedStacks {
-  height: 50px;
+  height: 80px;
   background-color: red;
   width: 200px;
+}
+.projectsContainer .projectBloc .projectInfos .links {
+  height: 80px;
+  width: 100%;
+  background-color: green;
 }
 .projectsContainer .projectBloc .projectCard {
   width: 60%;
@@ -59,86 +62,4 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.projectsContainer .projectBloc .projectCard .content {
-  height: 100%;
-  width: 100%;
-  margin-left: -100%;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.projectsContainer .projectBloc .projectCard .content .stacks {
-  transition: all 0.2s;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.projectsContainer .projectBloc .projectCard .content .stacks .linkButton {
-  color: transparent;
-  transition: all 0.2s;
-  font-size: 30px;
-}
-.projectsContainer .projectBloc .projectCard .content .stacks:hover {
-  background-color: rgba(250, 253, 255, 0.2);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-}
-.projectsContainer .projectBloc .projectCard .content .stacks:hover .linkButton {
-  color: var(--text);
-  font-size: 34px;
-}
-.projectsContainer .projectBloc .projectCard .content .textContent {
-  box-shadow: 0 -10px 40px rgba(0, 3, 5, 0.8);
-  background-color: rgba(250, 253, 255, 0.9);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.projectsContainer .projectBloc .projectCard .content .textContent .blocLeft {
-  padding: 18px 25px;
-  transition: all 0.2s;
-}
-.projectsContainer .projectBloc .projectCard .content .textContent .blocLeft:hover {
-  background-color: var(--dmbackground);
-  color: var(--dmtext);
-}
-.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer {
-  display: flex;
-  height: 100%;
-}
-.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer:hover .ghButtonTxt {
-  transform: translate(0px);
-  opacity: 1;
-}
-.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--dmtext);
-  height: 100%;
-  padding: 0 20px;
-  background-color: var(--dmbackground);
-  border-right: 1px solid;
-  transform: translateX(195px);
-  transition: all 0.25s;
-  opacity: 0;
-  font-weight: 400;
-}
-.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer .iconContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 0 20px;
-  background-color: var(--dmbackground);
-  font-size: 40px;
-  z-index: 1;
-}
-.projectsContainer .projectBloc .projectCard .content .textContent .ghButtonContainer .iconContainer .fa-github {
-  color: var(--dmtext);
-  animation: scaleAnimation 1.2s infinite alternate;
 }/*# sourceMappingURL=projects.css.map */

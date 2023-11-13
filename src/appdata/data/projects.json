@@ -1,24 +1,23 @@
-{
-    "projects": [
-      {
-        "titre": "Projet 1",
-        "images": ["./images/new.png"],
-        "description": "Description du premier projet.",
-        "stacks": "Objectif principal du projet 1.",
-        "highlight": true
-        
-      },
-      {
-        "titre": "Projet 2",
-        "images": [],
-        "description": "Description du deuxième projet.",
-        "stacks": "Objectif principal du projet 2."
-      },
-      {
-        "titre": "Projet 3",
-        "images": [],
-        "description": "Description du troisième projet.",
-        "stacks": "Objectif principal du projet 3."
-      }
-    ]
+[
+  {
+    "titre": "Projet 1",
+    "images": ["./images/new.png"],
+    "description": "Description du premier projet.",
+    "stacks": "Objectif principal du projet 1.",
+    "highlight": true
+    
+  },
+  {
+    "titre": "Projet 2",
+    "images": ["./images/project2.jpg"],
+    "description": "Description du deuxième projet.",
+    "stacks": "Objectif principal du projet 2."
+  },
+  {
+    "titre": "Projet 3",
+    "images": ["./images/project3.jpg"],
+    "description": "Description du troisième projet.",
+    "stacks": "Objectif principal du projet 3."
   }
+]
+  

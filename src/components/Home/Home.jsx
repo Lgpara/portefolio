@@ -1,7 +1,7 @@
 import "./home.css";
 import React, { useEffect, useState } from "react";
 import { Application } from "@splinetool/runtime";
-import pp from "../../appdata/images/testphoto.png";
+import profilePicture from "../../appdata/images/profileNoBackground.png";
 import projectsData from "../../appdata/data/projects.json";
 
 function SplineComponent() {
@@ -43,11 +43,11 @@ function Home() {
             <p>My name is Louis Gerber. I'm a 26 years old web developper passionated about the tech industry. I have completed the web integrator curriculum on the OpenClassrooms platform.</p>
           </div>
           <div className="photoContainer">
-            <img src={pp} alt="" />
+            <img src={profilePicture} alt="" />
           </div>
         </div>
         <div className="bottomElement">
-          <img src={projectsData.projects[0].images[0]} alt="" />
+          <img src={projectsData[0].images[0]} alt="" />
           <div className="textElement">
             <div className="title">
               <h2>Currently working on</h2>
