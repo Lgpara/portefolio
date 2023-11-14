@@ -6,7 +6,12 @@ footer {
   height: 40px;
 }
 footer p {
-  background: var(--dmbackground);
+  background: var(--background);
   padding: 10px 50px;
   color: var(--dmtext);
+}
+@media only screen and (max-width: 767px) {
+  footer p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=footer.css.map */

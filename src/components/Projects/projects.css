@@ -16,8 +16,18 @@
   border-bottom: solid 1px rgba(75, 107, 129, 0.5);
   box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
 }
+@media only screen and (max-width: 767px) {
+  .projectsContainer {
+    margin-bottom: 20px;
+  }
+}
 .projectsContainer .bloc2 {
   flex-direction: row-reverse !important;
+}
+@media only screen and (max-width: 767px) {
+  .projectsContainer .bloc2 {
+    flex-direction: column !important;
+  }
 }
 .projectsContainer .projectBloc {
   height: 600px;
@@ -26,36 +36,102 @@
   display: flex;
   flex-direction: row;
 }
+@media only screen and (max-width: 1023px) {
+  .projectsContainer .projectBloc {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .projectsContainer .projectBloc {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .projectsContainer .projectBloc .projectInfos {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 40%;
   height: 100%;
-  border: solid;
   padding: 60px;
+}
+@media only screen and (max-width: 1023px) {
+  .projectsContainer .projectBloc .projectInfos {
+    width: 50%;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .projectsContainer .projectBloc .projectInfos {
+    width: 100%;
+    background-color: var(--background);
+  }
 }
 .projectsContainer .projectBloc .projectInfos * {
   color: var(--text);
 }
+.projectsContainer .projectBloc .projectInfos .projectName, .projectsContainer .projectBloc .projectInfos .description, .projectsContainer .projectBloc .projectInfos .usedStacks * {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2px 5px;
+}
+@media only screen and (max-width: 767px) {
+  .projectsContainer .projectBloc .projectInfos .projectName, .projectsContainer .projectBloc .projectInfos .description, .projectsContainer .projectBloc .projectInfos .usedStacks * {
+    margin-bottom: 5px;
+    margin: 0 auto 5px auto;
+    text-align: center;
+    background-color: transparent;
+  }
+}
 .projectsContainer .projectBloc .projectInfos .projectName {
   font-size: 30px;
 }
-.projectsContainer .projectBloc .projectInfos .usedStacks {
-  height: 80px;
-  background-color: red;
-  width: 200px;
+@media only screen and (max-width: 1023px) {
+  .projectsContainer .projectBloc .projectInfos .projectName {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .projectsContainer .projectBloc .projectInfos .description {
+    font-size: 16px;
+  }
+}
+.projectsContainer .projectBloc .projectInfos .usedStacks .stacksTitle {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1023px) {
+  .projectsContainer .projectBloc .projectInfos .usedStacks .stacksTitle {
+    font-size: 20px;
+  }
 }
 .projectsContainer .projectBloc .projectInfos .links {
-  height: 80px;
   width: 100%;
-  background-color: green;
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .projectsContainer .projectBloc .projectInfos .links {
+    justify-content: center;
+    margin-top: 10px;
+  }
 }
 .projectsContainer .projectBloc .projectCard {
   width: 60%;
   height: 100%;
   display: flex;
   overflow: hidden;
+}
+@media only screen and (max-width: 1023px) {
+  .projectsContainer .projectBloc .projectCard {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .projectsContainer .projectBloc .projectCard {
+    width: 100%;
+    height: 300px;
+  }
 }
 .projectsContainer .projectBloc .projectCard img {
   height: 100%;

@@ -1,14 +1,14 @@
 @keyframes langBtnAnim {
     0% {
-        filter: invert(0);
+        filter: grayscale(0);
     }
 
     50% {
-        filter: invert(1);
+        filter: grayscale(0.6);
     }
 
     100% {
-        filter: invert(0);
+        filter: grayscale(0);
     }
 }
 
@@ -36,7 +36,6 @@
     &:hover {
         transform: scale(1.03);
     }
-
     :nth-child(1) {
         font-size: 25px;
         margin-right: 8px;
@@ -73,42 +72,48 @@ header {
         color: var(--dmtext);
     }
     .openAnimSidePannel {
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @media only screen and (max-width: 1023px) {
             height: 100vh;
           }
     }
     .elements {
         display: flex;
         align-items: center;
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @media only screen and (max-width: 1023px) {
             transition: all 0.5s;
-            overflow: hidden;
+            width: 0;
             height: 100%;
-            background-color: var(--background05);
+            background-color: var(--background);
             align-items: start;
             flex-direction: column;
           }
           
         .navIcon {
-            @media only screen and (min-width: 768px) and (max-width: 1023px) {
-                margin: 18px 0 36px 20px;
+            font-size: 26px!important;
+            @media only screen and (max-width: 1023px) {
+                margin: 18px 0 36px 0px;
               }
             padding: 0 20px;  
             display: flex;
             margin-right: 20px;
             cursor: pointer;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
         nav {
             padding: 0 20px;
             margin-top: -2px;
             display: flex;
-            @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            @media only screen and (max-width: 1023px) {
                 flex-direction: column;
+                transform: translateX(-180px);
+                transition: all 0.2s ease-in-out;
               }
               
             @media only screen and (min-width: 1024px) {
                 margin-top: -2px;
-                transform: translateX(-500px);
+                transform: translateX(-540px);
                 transition: all 0.5s;
             }
 
@@ -119,7 +124,12 @@ header {
                 font-size: 23px;
                 display: block;
                 transition: all 0.2s;
-
+                @media only screen and (max-width: 1023px) {
+                    margin-bottom: 6px;
+                    padding: 2px 5px;
+                    background-color: var(--background);
+                    border: var(--border);
+                  }
                 &:hover {
                     transform: scale(1.05);
                 }
@@ -128,8 +138,11 @@ header {
 
         .openAnim {
             @media only screen and (min-width: 1024px) {
-                transform: translateX(0px);
+                transform: translateX(-40px);
             }
+            @media only screen and (max-width: 1023px) {
+                transform: translateX(-20px);
+              }
               
         }
 
@@ -162,11 +175,17 @@ header {
 }
 
 .headerIcons {
-    font-size: 25px;
+    font-size: 36px;
     transition: all 0.3s;
-    margin-left: 20px;
-
+    @media only screen and (max-width: 767px) {
+        font-size: 26px;           
+    }
+    
     &:hover {
         transform: scale(1.15);
     }
+}
+.linkedinLink {
+    margin-left: 20px;
+    
 }

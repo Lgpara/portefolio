@@ -1,4 +1,4 @@
-import Section from "../../props/Sections"
+import Section from "../../props/sections/Sections"
 import Home from "../../components/Home/Home";
 import Skills from "../../components/Skills/Skills"
 import Projects from "../../components/Projects/Projects";
@@ -31,8 +31,9 @@ export default function Main() {
   ];
   return (
     <main>
-      {sections.map((section) => (
+      {sections.map((section, index) => (
         <Section
+          key={index}
           title={section.title}
           id={section.id}
           name={section.name}

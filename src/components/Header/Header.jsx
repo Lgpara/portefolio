@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
 import "./header.css";
+import Button from "../../props/button/Button";
 
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
 
   const [langClicked, setLangClicked] = useState(false);
-  const [lang, setLang] = useState("English")
+  const [lang, setLang] = useState("English");
 
   function handleLangBtnClick() {
     console.log("click");
     setLangClicked(true);
     setTimeout(() => setLangClicked(false), 500);
-    if(lang === "English"){
-      setLang("French")
-    }else {
-      setLang("English")
+    if (lang === "English") {
+      setLang("French");
+    } else {
+      setLang("English");
     }
   }
 
@@ -29,28 +30,28 @@ export default function Header() {
     document.execCommand("copy");
     document.body.removeChild(elementTemporaire);
 
-    setMailClicked(true)
+    setMailClicked(true);
     setTimeout(() => setMailClicked(false), 5000);
   }
 
   //reset state usernav
-  useEffect(()=>{
-    setNavOpen(false)
-    setMailClicked(false)
-  },[])
+  useEffect(() => {
+    setNavOpen(false);
+    setMailClicked(false);
+  }, []);
 
   return (
     <header>
-      <div className={navOpen ? "elements openAnimSidePannel": "elements" }>
+      <div className={navOpen ? "elements openAnimSidePannel" : "elements"}>
         {navOpen ? (
           <i
             onClick={() => setNavOpen(false)}
-            className="navIcon headerIcons fa-solid fa-xmark"
+            className="navIcon fa-solid fa-xmark"
           ></i>
         ) : (
           <i
             onClick={() => setNavOpen(true)}
-            className="navIcon headerIcons fa-solid fa-bars"
+            className="navIcon fa-solid fa-bars"
           ></i>
         )}
         <nav className={navOpen ? "openAnim" : "closeAnim"}>
@@ -61,19 +62,33 @@ export default function Header() {
         </nav>
       </div>
       <div className="socialIcons">
-        <div
-          onClick={handleLangBtnClick}
-          className={langClicked ? "langSwitch langSwitchAnim" : "langSwitch"}
-        >
-          <i className="fa-solid fa-language"></i>
-          <p className="lang">{lang}</p>
+        <div onClick={handleLangBtnClick}>
+          <Button
+            icon={<i className="fa-solid fa-language"></i>}
+            text={lang}
+            containerClass={langClicked ? "langSwitchAnim" : null}
+          />
         </div>
-        <div onClick={copyMail} className={mailClicked? "mail greenBg": "mail"}>
-          {mailClicked? <i className="fa-solid fa-check"></i>: <i className="copyMail fa-regular fa-copy"></i>}
-          <p className="mailAdress">louisgerber004@gmail.com</p>
+        <div onClick={copyMail}>
+          <Button
+            icon={
+              mailClicked ? (
+                <i className="fa-solid fa-check"></i>
+              ) : (
+                <i className="copyMail fa-regular fa-copy"></i>
+              )
+            }
+            text="louisgerber004@gmail.com"
+            containerClass={mailClicked ? "greenBg" : null}
+          />
         </div>
-          <a href="https://github.com/Lgpara"><i className="headerIcons fa-brands fa-github"></i></a>
-          <a><i className="headerIcons fa-brands fa-linkedin"></i></a>
+
+        <a href="https://github.com/Lgpara">
+          <i className="headerIcons fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/louis-gerber-838a33291/" className="linkedinLink">
+          <i className="headerIcons fa-brands fa-linkedin"></i>
+        </a>
       </div>
     </header>
   );

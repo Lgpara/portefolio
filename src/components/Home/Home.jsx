@@ -1,31 +1,12 @@
 import "./home.css";
-import React, { useEffect, useState } from "react";
-import { Application } from "@splinetool/runtime";
+import React from "react";
 import profilePicture from "../../appdata/images/profileNoBackground.png";
 import projectsData from "../../appdata/data/projects.json";
-
-function SplineComponent() {
-  useEffect(() => {
-    const loadSplineScene = async () => {
-      const canvas = document.getElementById("canvas3d");
-      const app = new Application(canvas);
-      await app.load(
-        "https://prod.spline.design/ppOTAvz1aI26A9De/scene.splinecode"
-      );
-    };
-
-    loadSplineScene();
-  }, []); 
-  return <canvas id="canvas3d" style={{ display: "none" }}></canvas>;
-}
 
 
 function Home() {
   return (
     <div className="homeContainer">
-      {/* <div className="bgContainer">
-        <SplineComponent />
-      </div> */}
       <div className="hello">
         <h1>Hello my name is Louis,</h1>
         <p>
@@ -51,7 +32,7 @@ function Home() {
           <div className="textElement">
             <div className="title">
               <h2>Currently working on</h2>
-              <i class="fa-solid fa-gear"></i>
+              <i className="fa-solid fa-gear"></i>
             </div>
           </div>
         </div>

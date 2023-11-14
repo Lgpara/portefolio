@@ -3,21 +3,24 @@
     "titre": "Projet 1",
     "images": ["./images/new.png"],
     "description": "Description du premier projet.",
-    "stacks": "Objectif principal du projet 1.",
-    "highlight": true
-    
+    "stacks": ["HTML, CSS, SASS"],
+    "highlight": true,
+    "link": {
+      "github" : "",
+      "website": ""
+    }
   },
   {
     "titre": "Projet 2",
     "images": ["./images/project2.jpg"],
     "description": "Description du deuxième projet.",
-    "stacks": "Objectif principal du projet 2."
+    "stacks": ["HTML, CSS, SASS"]
   },
   {
     "titre": "Projet 3",
     "images": ["./images/project3.jpg"],
     "description": "Description du troisième projet.",
-    "stacks": "Objectif principal du projet 3."
+    "stacks": ["HTML, CSS, SASS"]
   }
 ]
   

@@ -18,9 +18,15 @@
     justify-content: space-between;
     border-bottom: solid 1px rgba(75, 107, 129, 0.5);
     box-shadow: 0 1px 3px rgba(0, 3, 5, 0.5);
-
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 20px;           
+    }
     .bloc2 {
         flex-direction: row-reverse !important;
+        @media only screen and (max-width: 767px) {
+            flex-direction: column !important;
+          }
+          
     }
 
     .projectBloc {
@@ -29,38 +35,88 @@
         overflow: hidden;
         display: flex;
         flex-direction: row;
+        @media only screen and (max-width: 1023px) {
+            height: 400px;
+        }
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+            height: auto;
+          }
+          
         .projectInfos {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
             width: 40%;
             height: 100%;
-            border: solid;
             padding: 60px;
+            @media only screen and (max-width: 1023px) {
+                width: 50%;
+                padding: 20px;
+            }
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                background-color: var(--background);
+              }
+              
             * {
                 color: var(--text);
             }
+            .projectName, .description, .usedStacks * {
+                width: fit-content;
+                background-color: rgba($color: #000000, $alpha: 0.9);
+                padding: 2px 5px;
+                @media only screen and (max-width: 767px) {
+                    margin-bottom: 5px;
+                    margin: 0 auto 5px auto;
+                    text-align: center;
+                    background-color: transparent;
+                }
+            }
             .projectName {
                 font-size: 30px;
+                @media only screen and (max-width: 1023px) {
+                    font-size: 24px;
+                }
+            }
+            .description {
+                @media only screen and (max-width: 1023px) {
+                    font-size: 16px;
+                }
             }
             .usedStacks {
-                height: 80px;
-                background-color: red;
-                width: 200px;
+                .stacksTitle {
+                    text-decoration: underline;
+                    margin-bottom: 10px;
+                    @media only screen and (max-width: 1023px) {
+                        font-size: 20px;
+                    }
+                }
             }
             .links {
-                height: 80px;
                 width: 100%;
-                background-color: green;
+                display: flex;
+                @media only screen and (max-width: 767px) {
+                    justify-content: center;
+                    margin-top: 10px;
+                }
             }
         }
 
         .projectCard {
+
             width: 60%;
             height: 100%;
             display: flex;
             overflow: hidden;
-
+            @media only screen and (max-width: 1023px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+                height: 300px;
+              }
+              
             img {
                 height: 100%;
                 width: 100%;

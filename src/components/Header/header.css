@@ -1,12 +1,12 @@
 @keyframes langBtnAnim {
   0% {
-    filter: invert(0);
+    filter: grayscale(0);
   }
   50% {
-    filter: invert(1);
+    filter: grayscale(0.6);
   }
   100% {
-    filter: invert(0);
+    filter: grayscale(0);
   }
 }
 @keyframes showHeader {
@@ -36,7 +36,7 @@ header {
 header * {
   color: var(--dmtext);
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   header .openAnimSidePannel {
     height: 100vh;
   }
@@ -45,41 +45,47 @@ header .elements {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   header .elements {
     transition: all 0.5s;
-    overflow: hidden;
+    width: 0;
     height: 100%;
-    background-color: var(--background05);
+    background-color: var(--background);
     align-items: start;
     flex-direction: column;
   }
 }
 header .elements .navIcon {
+  font-size: 26px !important;
   padding: 0 20px;
   display: flex;
   margin-right: 20px;
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   header .elements .navIcon {
-    margin: 18px 0 36px 20px;
+    margin: 18px 0 36px 0px;
   }
+}
+header .elements .navIcon:hover {
+  transform: scale(1.05);
 }
 header .elements nav {
   padding: 0 20px;
   margin-top: -2px;
   display: flex;
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   header .elements nav {
     flex-direction: column;
+    transform: translateX(-180px);
+    transition: all 0.2s ease-in-out;
   }
 }
 @media only screen and (min-width: 1024px) {
   header .elements nav {
     margin-top: -2px;
-    transform: translateX(-500px);
+    transform: translateX(-540px);
     transition: all 0.5s;
   }
 }
@@ -91,12 +97,25 @@ header .elements nav a {
   display: block;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 1023px) {
+  header .elements nav a {
+    margin-bottom: 6px;
+    padding: 2px 5px;
+    background-color: var(--background);
+    border: var(--border);
+  }
+}
 header .elements nav a:hover {
   transform: scale(1.05);
 }
 @media only screen and (min-width: 1024px) {
   header .elements .openAnim {
-    transform: translateX(0px);
+    transform: translateX(-40px);
+  }
+}
+@media only screen and (max-width: 1023px) {
+  header .elements .openAnim {
+    transform: translateX(-20px);
   }
 }
 header .socialIcons {
@@ -166,10 +185,18 @@ header .socialIcons .greenBg {
 }
 
 .headerIcons {
-  font-size: 25px;
+  font-size: 36px;
   transition: all 0.3s;
-  margin-left: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .headerIcons {
+    font-size: 26px;
+  }
 }
 .headerIcons:hover {
   transform: scale(1.15);
+}
+
+.linkedinLink {
+  margin-left: 20px;
 }/*# sourceMappingURL=header.css.map */

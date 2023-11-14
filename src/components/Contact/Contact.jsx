@@ -8,7 +8,7 @@ export default function Contact() {
         <p>Feel free to contact me for infos or just to say hi.</p>
       </div>
       <div className="formContainer">
-        <form name="contact" netlify>
+        <form name="contact">
           <input type="hidden" name="to" value="louisgerber004@gmail.com" />
           <label htmlFor="name">Name / Company</label>
           <input type="text" id="name" name="name" />
@@ -22,20 +22,8 @@ export default function Contact() {
             rows="20"
             required
           ></textarea>
-          <button type="submit">Envoyer</button>
+          <button type="submit">Send message</button>
         </form>
-      </div>
-      <div className="socialContainer">
-        <a href="" className="socialIconLink">
-          <i className="socialIcons fa-brands fa-github"></i>
-        </a>
-        <a href="" className="socialIconLink">
-          <i className="socialIcons fa-brands fa-linkedin"></i>
-        </a>
-        <a href="" className="socialIconLink mail">
-            <i class="socialIcons fa-solid fa-envelope enveloppe"></i>
-            <i class="socialIcons fa-regular fa-copy copy"></i>
-        </a>
       </div>
     </div>
   );

@@ -1,0 +1,50 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px 10px 2px 2px;
+  border-radius: 24px;
+  background-color: var(--accent);
+  transition: all 0.2s;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    padding: 4px;
+  }
+}
+.btn:hover {
+  transform: scale(1.03);
+  background-color: #99337C;
+}
+.btn :nth-child(1) {
+  font-size: 25px;
+  margin-right: 8px;
+  background-color: var(--background);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .btn :nth-child(1) {
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn :nth-child(1) {
+    margin-right: 0;
+  }
+}
+.btn p {
+  font-weight: 300;
+}
+@media only screen and (max-width: 767px) {
+  .btn p {
+    display: none;
+  }
+}/*# sourceMappingURL=button.css.map */
