@@ -19,8 +19,8 @@ export default function Projects() {
               <p>{project.stacks.join(", ")}</p>
             </div>
             <div className="links">
-              <Button icon={<i className="fa-solid fa-arrow-up-right-from-square"></i>} text="Visit website" />
-              <Button icon={<i className="fa-brands fa-github"></i>} text="Check code on Github" />
+              <Button link={project.link.website} containerClass={project.link.website ? null : "unavailable"} icon={<i className="fa-solid fa-arrow-up-right-from-square"></i>} text="Visit website" />
+              <Button link={project.link.github} containerClass={project.link.github ? null : "unavailable"} icon={<i className="fa-brands fa-github"></i>} text="Check code on Github" />
             </div>
           </div>
         </div>) : null

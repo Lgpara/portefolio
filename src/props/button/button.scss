@@ -11,7 +11,7 @@
         padding: 4px;
       }
       
-    &:hover {
+    &:hover:not(.unavailable) {
         transform: scale(1.03);
         background-color: #99337C;
     }

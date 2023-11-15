@@ -11,7 +11,7 @@ import next from "../../appdata/images/icons/next.svg";
 export default function Skills() {
   return (
     <div className="skillsContainer">
-        <h2 className="stacksTitle">Mes Stacks</h2>
+      <h2 className="stacksTitle">Tech stacks</h2>
       <div className="stacks">
         <div className="stacksIcons">
           <img src={html} alt="Icone Html" />
@@ -23,35 +23,33 @@ export default function Skills() {
         </div>
       </div>
       <div className="competences">
-        <h2>Domaine de compétences</h2>
+      <h2>Area of competence</h2>
         <div className="skillsBloc">
           <div className="apt1">
-            <h3>Applications Web</h3>
+            <h3>Web Applications</h3>
             <p>
-              Besoin d'une application web sur mesure ? Je suis là pour
-              concevoir des solutions personnalisées et performantes pour votre
-              entreprise. Faites passer votre entreprise au niveau supérieur
-              avec une application web conçue sur mesure pour répondre à vos
-              besoins uniques.
+              Need a custom web application? I'm here to design tailored and
+              high-performance solutions for your business. Take your business
+              to the next level with a custom web application designed to meet
+              your unique needs.
             </p>
           </div>
           <div className="apt1">
             <h3>SEO</h3>
             <p>
-              Optimisez votre visibilité en ligne. Je créerai un site web qui se
-              démarque sur les moteurs de recherche. Votre site sera conçu pour
-              attirer un trafic qualifié, renforçant ainsi votre présence en
-              ligne et stimulant votre croissance.
+              Enhance your online visibility. I will create a website that
+              stands out on search engines. Your site will be designed to
+              attract qualified traffic, thereby strengthening your online
+              presence and boosting your growth.
             </p>
           </div>
           <div className="apt1">
-            <h3>Accessibilité</h3>
+            <h3>Accessibility</h3>
             <p>
-              Rendez votre site accessible à tous. Je veille à ce que votre site
-              soit convivial pour tous les utilisateurs, y compris ceux ayant
-              des besoins spéciaux. Améliorez l'expérience de vos visiteurs et
-              montrez votre engagement envers l'inclusion en optant pour un site
-              web accessible.
+              Make your site accessible to everyone. I ensure that your site is
+              user-friendly for all, including those with special needs. Enhance
+              the experience for your visitors and demonstrate your commitment
+              to inclusion by choosing an accessible website.
             </p>
           </div>
         </div>

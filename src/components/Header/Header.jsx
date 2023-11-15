@@ -34,7 +34,6 @@ export default function Header() {
     setTimeout(() => setMailClicked(false), 5000);
   }
 
-  //reset state usernav
   useEffect(() => {
     setNavOpen(false);
     setMailClicked(false);
@@ -62,13 +61,13 @@ export default function Header() {
         </nav>
       </div>
       <div className="socialIcons">
-        <div onClick={handleLangBtnClick}>
+        {/* <div onClick={handleLangBtnClick}>
           <Button
             icon={<i className="fa-solid fa-language"></i>}
             text={lang}
             containerClass={langClicked ? "langSwitchAnim" : null}
           />
-        </div>
+        </div> */}
         <div onClick={copyMail}>
           <Button
             icon={

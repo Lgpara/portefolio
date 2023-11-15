@@ -1,0 +1,21 @@
+{
+    "fr": {
+        "header": ["Accueil", "Compétences", "Projets", "Contact"],
+        "home": {
+            "title" : "",
+            "message" : ""
+        },
+        "skills": "",
+        "project": "",
+        "contact": "",
+        "footer": ""
+    },
+    "en": {
+        "header": ["Home", "Skills", "Projects", "Contact"],
+        "home": "",
+        "skills": "",
+        "project": "",
+        "contact": "",
+        "footer": ""
+    }
+}
