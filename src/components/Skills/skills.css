@@ -16,6 +16,11 @@
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 1023px) {
+  .skillsContainer {
+    align-items: start;
+  }
+}
 .skillsContainer .stacksTitle {
   margin: 20px 0 40px 0;
   padding: 10px 20px;
@@ -26,6 +31,12 @@
   font-weight: 600;
   position: absolute;
   top: 0;
+}
+@media only screen and (max-width: 1023px) {
+  .skillsContainer .stacksTitle {
+    font-size: 18px;
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   .skillsContainer .stacksTitle {
@@ -60,13 +71,13 @@
   .skillsContainer .stacks .stacksIcons {
     flex-direction: column;
     width: auto;
-    margin: 100px 0 20px 0;
+    margin: 60px 0 20px 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .skillsContainer .stacks .stacksIcons {
     flex-direction: row;
-    margin: 70px 0 20px 0;
+    margin: 60px 0 20px 0;
   }
 }
 .skillsContainer .stacks .stacksIcons img {
@@ -95,6 +106,7 @@
   .skillsContainer .competences {
     width: 80%;
     flex-grow: 1;
+    min-height: 400px;
   }
 }
 @media only screen and (max-width: 767px) {

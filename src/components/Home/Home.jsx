@@ -5,6 +5,13 @@ import projectsData from "../../appdata/data/projects.json";
 
 
 function Home() {
+
+  function openResume(){
+    const resumePath = "./images/CV.pdf" 
+    window.open(resumePath, "_blank")
+  }
+
+
   return (
     <div className="homeContainer">
       <div className="hello">
@@ -22,6 +29,7 @@ function Home() {
           <div className="textContainer">
             <h2>About me.</h2>
             <p>My name is Louis Gerber. I'm a 26 years old web developper passionated about the tech industry. I have completed the web integrator curriculum on the OpenClassrooms platform.</p>
+            <div onClick={openResume} className="resumeBtn">Check my resume !</div>
           </div>
           <div className="photoContainer">
             <img src={profilePicture} alt="" />

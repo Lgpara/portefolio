@@ -1,13 +1,14 @@
 .homeContainer {
   display: flex;
   height: calc(100vh - 60px);
+  max-height: 1100px;
   margin-top: 60px;
   overflow: hidden;
   justify-content: space-between;
 }
 @media only screen and (max-width: 1023px) {
   .homeContainer {
-    min-height: 540px;
+    height: auto;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -115,11 +116,24 @@
 }
 .homeContainer .rightModule .topElement .textContainer p {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 1320px) {
   .homeContainer .rightModule .topElement .textContainer p {
     font-size: 16px;
   }
+}
+.homeContainer .rightModule .topElement .textContainer .resumeBtn {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: var(--accent);
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.homeContainer .rightModule .topElement .textContainer .resumeBtn:hover {
+  transform: scale(1.05);
 }
 .homeContainer .rightModule .topElement .textContainer * {
   color: var(--dmtext);
@@ -207,12 +221,13 @@
   }
 }
 .homeContainer .rightModule .bottomElement .textElement {
-  margin-top: -60px;
+  position: absolute;
   z-index: 99;
+  top: 10px;
   padding: 10px 0;
   height: 64px;
   width: 100%;
-  background-color: var(--background05);
+  background-color: var(--background);
 }
 .homeContainer .rightModule .bottomElement .textElement .title {
   padding-left: 6%;

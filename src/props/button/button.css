@@ -15,7 +15,7 @@
 }
 .btn:hover:not(.unavailable) {
   transform: scale(1.03);
-  background-color: #99337C;
+  background-color: var(--accentLight);
 }
 .btn :nth-child(1) {
   font-size: 25px;

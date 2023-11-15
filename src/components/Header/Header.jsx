@@ -34,6 +34,7 @@ export default function Header() {
     setTimeout(() => setMailClicked(false), 5000);
   }
 
+
   useEffect(() => {
     setNavOpen(false);
     setMailClicked(false);
